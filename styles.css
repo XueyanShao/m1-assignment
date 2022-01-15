@@ -1,0 +1,102 @@
+
+header {
+  background: no-repeat #faf7f2 url(images/main-header.jpg);
+  background-size: 700px;
+  height: 130px;
+  background-position: right;
+  padding: 40px;
+}
+.main-menu {
+  font-weight: 400;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: end;
+  margin-bottom: 6px; 
+}
+.main-menu ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding-left: 25px;
+  padding-right: 25px;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.main-menu ul li a {
+  text-decoration: none;
+  color: #888;
+}
+.main-menu ul li a:hover {
+  color: #9ed034;
+}
+.main-menu ul li.active {
+  background: #9ed034;
+  border: none;
+}
+.main-menu ul li.active a {
+  color: #fff;
+}
+p,h1,h2,h3{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h2{
+    color:steelblue
+}
+h1{
+    color:#9ed034;
+}
+/* index page */
+#indexpage{
+    margin:40px;
+}
+
+/* find pets page */
+#findpetspage{
+    margin:40px;
+}
+
+/* contact page */
+#contactpage{
+    margin:40px;
+}
+table {
+  width: 1000px;
+  margin: 4em auto 0 auto;
+}
+caption {
+  background: #9fbfdb;
+  height: 40px;
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-top: 1em;
+}
+thead {
+  background: #bde1ff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+tbody,
+tfoot {
+  background: #faf7f2;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+th,
+td {
+  width: 225px;
+  height: 75px;
+  vertical-align: middle;
+  border: solid 1px #fff;
+}
+thead tr:first-child {
+  font-weight: bold;
+  background: #d3e7f8;
+}
+tbody tr td:first-child {
+  font-weight: bold;
+  background: #d3e7f8;
+}
+tfoot tr td:first-child {
+  font-weight: bold;
+  background: #d3e7f8;
+}

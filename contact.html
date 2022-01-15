@@ -1,83 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-</head>
-<body>
-
-<!-- Container to wrap everything-->
-<div id="container">
-
-  
-    <!-- Logo Image -->
-    <div class="logo">
-        <img src="images/logo.svg" alt="Adopt a Pet Logo" width="125">
-     </div>
-       <!-- Brand of Website-->
-    <header>Adopt a dog or cat today!</header>
-       <!-- Main Navigation-->
-       <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="findpets.html">Find Pets</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <!-- End Navigation-->
-    <h1>Adopt the Perfect Pet</h1>
-    <p>from more than 17,000 animal shelters & rescues</p>
-    <img src="images/pets.jpeg" alt="Two Cute Dogs and Two Pretty Cats" width="500">
-    <h3>Need to Rehome Your Pet?</h3>
-    <p>Adopt-a-Pet.com is now offering our Rehome program — the safe, reliable, and free way to find a loving new home for your pet.</p>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Container to wrap everything-->
+    <div id="container">
+        <!-- Brand of Website-->
+        <header>
+            <!-- Logo Image -->
+            <div class="logo">
+                <img src="images/logo.svg" alt="Adopt a Pet Logo" width="150" />
+            </div>
+            <h2>Adopt a dog or cat today!</h2>
+            <!-- Main Navigation-->
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="findpets.html">Find Pets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- End Navigation-->
+        </header>
+        <!-- End Header -->
  
-
-    <!-- Main Content-->
-    <main>
-       
+      <!-- Main Content-->
+      <main id="contactpage">
+                <h1>Adopt the Perfect Pet</h1>
+                <p>from more than 17,000 animal shelters & rescues</p>
         <h1>Contacting Us</h1>
-        <h3>Welcome! Over 3 million potential adopters use Adopt-a-Pet.com each month, and they could be seeing your shelter's or rescue's pets too! It takes just 3 easy steps to open a free account...</h3>
-        <p>Step 1: Read & Agree to our Rules </p>
+        <h3>
+          Welcome! Over 3 million potential adopters use Adopt-a-Pet.com each
+          month, and they could be seeing your shelter's or rescue's pets too!
+          It takes just 3 easy steps to open a free account...
+        </h3>
+        <p>Step 1: Read & Agree to our Rules</p>
         <p>Step 2: Fill out the Sign-Up Form.</p>
-        <p>Step 3: Read your confirmation email from Laurie, our Director of Adoption Services. She may ask for your adoption paperwork, or information to setup AutoUploading from your software.</p>
+        <p>
+          Step 3: Read your confirmation email from Laurie, our Director of
+          Adoption Services. She may ask for your adoption paperwork, or
+          information to setup AutoUploading from your software.
+        </p>
 
-       
-      <h2>Sign-Up Form</h2>
+        <h2>Sign-Up Form</h2>
         <form action="/contact" method="post">
-            <fieldset>
-              <Legend>Contact Form</Legend>
-              <br><label>Enter your full name</label><br>
-              <input type="text" name="name">
-              <br><label>Enter your email</label><br>
-              <input type="email" name="email">
-              <br><label>Enter your phone</label><br>
-              <input type="tel" name="phone"><br>
-              <br><label>How should we contact you?</label><br>
-              <input type ="radio" name="contact" value="Email">Email
-              <input type ="radio" name="contact" value="Phone">Phone<br><br>
-              <label>Which Pet are you inquiring?</label><br>
-              <select>
-                  <option>Dog</option>
-                  <option>Cat</option>
-                  <option>Others</option>
-              </select><br><br>
-              <label>How did you hear about us</label><br>
-              <textarea rows="5" cols="30"></textarea><br><br>
-              <input type="submit" value="submit">
-            </fieldset>
-  
+          <fieldset>
+            <legend>Contact Form</legend>
+            <br /><label>Enter your full name</label><br />
+            <input type="text" name="name" />
+            <br /><label>Enter your email</label><br />
+            <input type="email" name="email" />
+            <br /><label>Enter your phone</label><br />
+            <input type="tel" name="phone" /><br />
+            <br /><label>How should we contact you?</label><br />
+            <input type="radio" name="contact" value="Email" />Email
+            <input type="radio" name="contact" value="Phone" />Phone<br /><br />
+            <label>Which Pet are you inquiring?</label><br />
+            <select>
+              <option>Dog</option>
+              <option>Cat</option>
+              <option>Others</option></select
+            ><br /><br />
+            <label>How did you hear about us</label><br />
+            <textarea rows="5" cols="30"></textarea><br /><br />
+            <input type="submit" value="submit" />
+          </fieldset>
         </form>
-   
-    </main>
-    <!-- End Main Contact-->
+      </main>
+      <!-- End Main Contact-->
 
-    <!-- Footer Information-->
-    <footer>&copy; Copyright 2022</footer>
-    
-</div>
-<!-- End Container-->
-
-</body>
+      <!-- Footer Information-->
+      <footer>&copy; Copyright 2022</footer>
+    </div>
+    <!-- End Container-->
+  </body>
 </html>
