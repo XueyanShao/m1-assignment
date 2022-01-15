@@ -1,11 +1,12 @@
-
+/* header style */
 header {
   background: no-repeat #faf7f2 url(images/main-header.jpg);
-  background-size: 700px;
-  height: 130px;
+  background-size: 800px;
+  height: 110px;
   background-position: right;
   padding: 40px;
 }
+/* navigation style */
 .main-menu {
   font-weight: 400;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -19,43 +20,94 @@ header {
   padding-right: 25px;
   line-height: 40px;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
 }
 .main-menu ul li a {
   text-decoration: none;
   color: #888;
 }
 .main-menu ul li a:hover {
-  color: #9ed034;
+  color: #02a1a7;
 }
 .main-menu ul li.active {
-  background: #9ed034;
+  background: #ffd038;
   border: none;
 }
 .main-menu ul li.active a {
   color: #fff;
 }
+/* main style */
 p,h1,h2,h3{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+p{
+    color:grey;
+}
 h2{
-    color:steelblue
+    color:#02a1a7;
 }
 h1{
-    color:#9ed034;
+    color:#ffd038;
+}
+h1,h2,h3{
+            text-align:center;
+}
+/* footer style */
+footer {
+  background: no-repeat url(images/paws.jpeg);
+  background-size: 600px;
+  height: 160px;
+  background-position: bottom;
+}
+footer #nondisclaimer .copy {
+    font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  padding: 3.5em 3.5em 3.5em 1.3em;
+  float: left;
+  font-size: 0.9em;
+}
+footer #nondisclaimer .social {
+  display: inline-block;
+  padding: 2.5em;
+  /* margin-right: 9.25em; */
+  float: right;
+}
+footer #nondisclaimer .social .fa {
+  padding: 15px;
+  font-size: 15px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 4px;
+  border-radius: 50%;
+}
+footer #nondisclaimer .social .fa:hover {
+  opacity: 0.7;
+}
+footer #nondisclaimer .social .fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+footer #nondisclaimer .social .fa-instagram {
+  background: #125688;
+  color: white;
+}
+footer #nondisclaimer .social .fa-twitter {
+  background: #55acee;
+  color: white;
 }
 /* index page */
 #indexpage{
     margin:40px;
 }
-
+#indexpage img{
+     display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 /* find pets page */
 #findpetspage{
-    margin:40px;
-}
-
-/* contact page */
-#contactpage{
     margin:40px;
 }
 table {
@@ -99,4 +151,65 @@ tbody tr td:first-child {
 tfoot tr td:first-child {
   font-weight: bold;
   background: #d3e7f8;
+}
+
+/* contact page */
+#contactpage{
+    margin:40px;
+}
+span {
+    display:block;
+    margin-top: 10px;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+span:first-child {
+  font-weight: bold;
+  color:#02a1a7;
+}
+fieldset{
+    margin-top: 30px;
+}
+label {
+        display:block;
+  margin: 15px 0 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+legend {   
+  color: #02a1a7;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+fieldset {
+  border: solid 2px #ffd038;
+  padding-left: 15px;
+  padding-right:600px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 500px;
+  height: 25px;
+  margin-bottom: 15px;
+}
+textarea {
+  display: block;
+  width: 500px;
+  height: 200px;
+}
+input[type="submit"],
+input[type="reset"] {
+  margin: 20px 0 10px 0;
+  width: 100px;
+}
+form .button input {
+  background-color: #4977d1;
+  border-style: hidden;
+  color: #fff;
+  height: 35px;
+  width: 120px;
+  font-weight: bold;
+}
+.button {
+  text-align: right;
 }
