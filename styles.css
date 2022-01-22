@@ -197,14 +197,16 @@ tfoot tr td:first-child {
 }
 /* dog-gallery page */
 #doggallerypage{
-  margin:40px;
+  margin:6em;
 }
 #dogimages #dogs {
   display:inline-block;
   position: relative;
+  text-align center;
+  margin:2em;
 }
 #dogimages #dogs img{
-  display:block;
+  display:inline-block;
   border-radius: 10%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -214,7 +216,7 @@ tfoot tr td:first-child {
   font-weight: bold;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
-  padding: 10px;
+  padding-top:10px;
 }
 #dogimages #dogs #overlay {
   position:absolute;
@@ -225,24 +227,78 @@ tfoot tr td:first-child {
   display:flex;
   align-content: center;
   text-align: center;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: whitesmoke;
+  background-color: white;
+  opacity:0;
+  transition: 1s ease; 
 }
 #dogimages #dogs #overlay #text {
   position:absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   color: #ffd038;
   background-color: black;
+  visibility: visible;
   padding: 10px;
   font-size: 20px;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-#dogs:hover #overlay{
-  opacity: 1;
+#dogimages #dogs #overlay:hover {
+  opacity: 70%;
+}
+
+/* cat-gallery page */
+#catgallerypage{
+  margin:6em;
+}
+#catimages #cats {
+  display:inline-block;
+  position: relative;
+  text-align center;
+  margin:2em;
+}
+#catimages #cats img{
+  display:inline-block;
+  border-radius: 10%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#catimages #cats #catcaptions {
+  display:block;
+  color: black;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  padding-top:10px;
+}
+#catimages #cats #overlay {
+  position:absolute;
+  top:0;
+  bottom:0;
+  width:100%;
+  height: 100%;
+  display:flex;
+  align-content: center;
+  text-align: center;
+  background-color: white;
+  opacity:0;
+  transition: 1s ease; 
+}
+#catimages #cats #overlay #text {
+  position:absolute;
+  top: 45%;
+  left: 50%;
+  color: #ffd038;
+  background-color: black;
+  visibility: visible;
+  padding: 10px;
+  font-size: 20px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+#catimages #cats #overlay:hover {
+  opacity: 70%;
 }
 /* contact page */
 #contactpage{

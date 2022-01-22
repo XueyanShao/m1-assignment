@@ -24,16 +24,16 @@
         <!-- Main Navigation-->
         <div class="navbar">
           <a href="contact.html">Contact</a>
-          
+
           <div class="dropdown">
             <button class="dropbtn" onclick="myFunction()">
               Find Pets
               <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content" id="myDropdown">
-              <a href="findpets.html">Feature Pets</a>
+              <a href="findpets.html">Featured Pets</a>
               <a href="dog-gallery.html">Adopt a Dog</a>
-               <a href="cat-gallery.html">Adopt a Cat</a>
+              <a href="cat-gallery.html">Adopt a Cat</a>
             </div>
           </div>
 
@@ -134,5 +134,23 @@
       </footer>
     </div>
     <!-- End Container-->
+    <script>
+      //navigation dropdown menu
+      /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (e) {
+        if (!e.target.matches(".dropbtn")) {
+          var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains("show")) {
+            myDropdown.classList.remove("show");
+          }
+        }
+      };
+    </script>
   </body>
 </html>
