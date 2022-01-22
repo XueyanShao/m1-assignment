@@ -7,35 +7,73 @@ header {
   padding: 40px;
 }
 /* navigation style */
-.main-menu {
-  font-weight: 400;
+.navbar {
+  overflow: hidden;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  text-align: end;
-  margin-bottom: 6px; 
 }
-.main-menu ul li {
-  list-style-type: none;
-  display: inline-block;
-  padding-left: 25px;
-  padding-right: 25px;
-  line-height: 40px;
-  text-transform: uppercase;
+
+.navbar a {
+  float: right;
   font-size: 16px;
-}
-.main-menu ul li a {
+  color: white;
+  background-color: #ffd038;
+  text-align: center;
+  padding: 11px 20px;
   text-decoration: none;
-  color: #888;
 }
-.main-menu ul li a:hover {
-  color: #02a1a7;
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+  background-color: #ffd038;
 }
-.main-menu ul li.active {
-  background: #ffd038;
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
   border: none;
+  outline: none;
+  color: white;
+  padding: 11px 20px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
 }
-.main-menu ul li.active a {
-  color: #fff;
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: #02a1a7;
 }
+.navbar a:active {
+  background: #02a1a7;
+  border: 2px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
 /* main style */
 p,h1,h2,h3{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -157,7 +195,55 @@ tfoot tr td:first-child {
   font-weight: bold;
   background: #d3e7f8;
 }
-
+/* dog-gallery page */
+#doggallerypage{
+  margin:40px;
+}
+#dogimages #dogs {
+  display:inline-block;
+  position: relative;
+}
+#dogimages #dogs img{
+  display:block;
+  border-radius: 10%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#dogimages #dogs #dogcaptions {
+  display:block;
+  color: black;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  padding: 10px;
+}
+#dogimages #dogs #overlay {
+  position:absolute;
+  top:0;
+  bottom:0;
+  width:100%;
+  height: 100%;
+  display:flex;
+  align-content: center;
+  text-align: center;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: whitesmoke;
+}
+#dogimages #dogs #overlay #text {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  color: #ffd038;
+  background-color: black;
+  padding: 10px;
+  font-size: 20px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+#dogs:hover #overlay{
+  opacity: 1;
+}
 /* contact page */
 #contactpage{
   margin:40px;
