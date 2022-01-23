@@ -9,7 +9,7 @@ header {
 /* navigation style */
 .navbar {
   overflow: hidden;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .navbar a {
@@ -30,7 +30,7 @@ header {
 
 .dropdown .dropbtn {
   cursor: pointer;
-  font-size: 16px;  
+  font-size: 16px;
   border: none;
   outline: none;
   color: white;
@@ -40,7 +40,9 @@ header {
   margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+.navbar a:hover,
+.dropdown:hover .dropbtn,
+.dropbtn:focus {
   background-color: #02a1a7;
 }
 .navbar a:active {
@@ -53,7 +55,7 @@ header {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -75,25 +77,31 @@ header {
 }
 
 /* main style */
-p,h1,h2,h3{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding:0 4em 0 4em;
+p,
+h1,
+h2,
+h3 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0 4em 0 4em;
 }
-p{
-    color:grey;
+p {
+  color: grey;
 }
-h2{
-    color:#02a1a7;
+h2 {
+  color: #02a1a7;
 }
-h1{
-    color:#ffd038;
+h1 {
+  color: #ffd038;
 }
-h1::before{
-    content: url(images/dog-animated.gif);
-    width: 5px;
+h1::before {
+  content: url(images/dog-animated.gif);
+  width: 5px;
 }
-h1,h2,h3{
-    text-align:center;
+h1,
+h2,
+h3 {
+  text-align: center;
 }
 /* footer style */
 footer {
@@ -103,7 +111,7 @@ footer {
   background-position: bottom;
 }
 footer #nondisclaimer .copy {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   display: inline-block;
   padding: 3.5em 3.5em 3.5em 1.3em;
   float: left;
@@ -140,18 +148,18 @@ footer #nondisclaimer .social .fa-twitter {
   color: white;
 }
 /* index page */
-#indexpage{
-  margin:40px;
+#indexpage {
+  margin: 40px;
 }
-#indexpage img{
+#indexpage img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
 /* find pets page */
-#findpetspage{
-  margin:40px;
+#findpetspage {
+  margin: 40px;
 }
 table {
   width: 1000px;
@@ -163,18 +171,21 @@ caption {
   color: #fff;
   font-size: 1.3em;
   font-weight: bold;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   padding-top: 1em;
 }
 thead {
   background: #bde1ff;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 tbody,
 tfoot {
   background: #faf7f2;
   text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 th,
 td {
@@ -196,47 +207,51 @@ tfoot tr td:first-child {
   background: #d3e7f8;
 }
 /* dog-gallery page */
-#doggallerypage{
-  margin:6em;
+
+#doggallerypage {
+  margin: 4em;
 }
 #dogimages #dogs {
-  display:inline-block;
+  display: inline-block;
   position: relative;
-  text-align center;
-  margin:2em;
+  margin: 3em;
 }
-#dogimages #dogs img{
-  display:inline-block;
+#dogimages #dogs img {
+  display: inline-block;
   border-radius: 10%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #dogimages #dogs #dogcaptions {
-  display:block;
+  display: block;
   color: black;
   font-weight: bold;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: center;
-  padding-top:10px;
+  padding-top: 10px;
 }
 #dogimages #dogs #overlay {
-  position:absolute;
-  top:0;
-  bottom:0;
-  width:100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
   height: 100%;
-  display:flex;
+  display: flex;
   align-content: center;
   text-align: center;
   background-color: white;
-  opacity:0;
-  transition: 1s ease; 
+  opacity: 0;
+  transition: 1s ease;
+  cursor: pointer;
 }
 #dogimages #dogs #overlay #text {
-  position:absolute;
+  position: absolute;
   top: 45%;
   left: 50%;
   color: #ffd038;
-  background-color: black;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #02a1a7;
   visibility: visible;
   padding: 10px;
   font-size: 20px;
@@ -247,49 +262,51 @@ tfoot tr td:first-child {
 #dogimages #dogs #overlay:hover {
   opacity: 70%;
 }
-
 /* cat-gallery page */
-#catgallerypage{
-  margin:6em;
+#catgallerypage {
+  margin: 4em;
 }
 #catimages #cats {
-  display:inline-block;
+  display: inline-block;
   position: relative;
-  text-align center;
-  margin:2em;
+  margin: 3em;
 }
-#catimages #cats img{
-  display:inline-block;
+#catimages #cats img {
+  display: inline-block;
   border-radius: 10%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #catimages #cats #catcaptions {
-  display:block;
+  display: block;
   color: black;
   font-weight: bold;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: center;
-  padding-top:10px;
+  padding-top: 10px;
 }
 #catimages #cats #overlay {
-  position:absolute;
-  top:0;
-  bottom:0;
-  width:100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
   height: 100%;
-  display:flex;
+  display: flex;
   align-content: center;
   text-align: center;
   background-color: white;
-  opacity:0;
-  transition: 1s ease; 
+  opacity: 0;
+  transition: 1s ease;
+  cursor: pointer;
 }
 #catimages #cats #overlay #text {
-  position:absolute;
+  position: absolute;
   top: 45%;
   left: 50%;
   color: #ffd038;
-  background-color: black;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #02a1a7;
   visibility: visible;
   padding: 10px;
   font-size: 20px;
@@ -301,28 +318,29 @@ tfoot tr td:first-child {
   opacity: 70%;
 }
 /* contact page */
-#contactpage{
-  margin:40px;
+#contactpage {
+  margin: 40px;
 }
 span {
-  display:block;
+  display: block;
   margin-top: 10px;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 span:first-child {
   font-weight: bold;
-  color:#02a1a7;
+  color: #02a1a7;
 }
-fieldset{
+fieldset {
   margin-top: 30px;
 }
 label {
-  display:block;
+  display: block;
   margin: 15px 0 0 0;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
-legend {   
+legend {
   color: #02a1a7;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -330,7 +348,7 @@ legend {
 fieldset {
   border: solid 2px #ffd038;
   padding-left: 15px;
-  padding-right:600px;
+  padding-right: 600px;
 }
 input[type="text"],
 input[type="email"],
