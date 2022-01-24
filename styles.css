@@ -209,15 +209,20 @@ tfoot tr td:first-child {
 /* dog-gallery page */
 
 #doggallerypage {
-  margin: 4em;
+padding:0 6em 0 6em;
+}
+#dogimages {
+  display:inline-block
 }
 #dogimages #dogs {
   display: inline-block;
   position: relative;
-  margin: 3em;
+  padding:20px;
 }
 #dogimages #dogs img {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
   border-radius: 10%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -247,7 +252,7 @@ tfoot tr td:first-child {
 #dogimages #dogs #overlay #text {
   position: absolute;
   top: 45%;
-  left: 50%;
+  left: 43%;
   color: #ffd038;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -264,15 +269,20 @@ tfoot tr td:first-child {
 }
 /* cat-gallery page */
 #catgallerypage {
-  margin: 4em;
+padding:0 6em 0 6em;
+}
+#catimages {
+  display:inline-block
 }
 #catimages #cats {
   display: inline-block;
   position: relative;
-  margin: 3em;
+  padding:20px;
 }
 #catimages #cats img {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
   border-radius: 10%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -302,7 +312,7 @@ tfoot tr td:first-child {
 #catimages #cats #overlay #text {
   position: absolute;
   top: 45%;
-  left: 50%;
+  left: 43%;
   color: #ffd038;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
