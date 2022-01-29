@@ -209,15 +209,15 @@ tfoot tr td:first-child {
 /* dog-gallery page */
 
 #doggallerypage {
-padding:0 6em 0 6em;
+  padding: 0 6em 0 6em;
 }
 #dogimages {
-  display:inline-block
+  display: inline-block;
 }
 #dogimages #dogs {
   display: inline-block;
   position: relative;
-  padding:20px;
+  padding: 20px;
 }
 #dogimages #dogs img {
   display: flex;
@@ -269,15 +269,15 @@ padding:0 6em 0 6em;
 }
 /* cat-gallery page */
 #catgallerypage {
-padding:0 6em 0 6em;
+  padding: 0 6em 0 6em;
 }
 #catimages {
-  display:inline-block
+  display: inline-block;
 }
 #catimages #cats {
   display: inline-block;
   position: relative;
-  padding:20px;
+  padding: 20px;
 }
 #catimages #cats img {
   display: flex;
