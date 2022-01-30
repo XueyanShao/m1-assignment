@@ -19,17 +19,15 @@
         "Male, Young, Los Angeles",
         "Female, Adult, Los Angeles",
       ];
-  var popupList = []; //empty array to store html list that contains popup window
-      /*<div id="bio-name">
-
-<h3>Header/Name</h3>
-
-<p style="font-family:Lato; font-weight:500; font-style:normal; font-size:12px; letter-spacing:.4px; line-height:2.18em; color:#999999;" !important>
-
-Text goes in here.
-
-</p>
-  </div>*/
+  //Display popup window when click on images
+          var infoList = [
+          "Courtesy listing! Please contact Patricia at 323-691-4620 or email patriciadrum@yahoo.com to inquire on Pippy. <br><br>Meet Pippy! She is a 6 year old female Pit Bull who is in need of a new home. Sadly, her owner is having some troubles and can no longer care for her due to personal problems.",
+        "Text Here",
+        "Text Here",
+        "Text Here",
+        "Text Here",
+        "Text Here", 
+      ];
       var openList = "<li id='dogs'>"; //variable to contain open list
       var closeList = "</li>"; //variable to contain close list
       var openCaption = "<span id='dogcaptions'>";
@@ -38,19 +36,10 @@ Text goes in here.
       var closeOverlay = "</div>";
       var openText = "<div id='text'>";
       var closeText = "</div>";
-    
-  //Display popup window when click on images
-        var openPopup = "<div id='myPopup'>"
-      var closePopup = "</div>";
-      var popup = ""; //assemble the popup list codes
-          var infoList = [
-          "Text Here",
-        "Text Here",
-        "Text Here",
-        "Text Here",
-        "Text Here",
-        "Text Here", 
-      ];
+      var openDesc = "<button id='desc' onclick='enablePopup(";
+      var openDescClose = ")'>";
+      var closeDesc = "</button>";
+
       
       //Create a loop to create 6 images starting with index of 0
       for (var i = 0; i < 6; i++) {
@@ -59,14 +48,14 @@ Text goes in here.
           "<img src='gallery/" +
             fileNames[i] +
             ".jpeg' alt='Cute Dog Photo " +
-            (i + 1) +
+            (i + 1) + 
             "'>"
         ); //assemble full image element
         image =
           openList +
           dogPhotos[i] +
           openCaption +
-          captionList[i] +
+          openDesc + i + openDescClose + captionList[i] + closeDesc +
           closeCaption +
           openOverlay +
           openText +
@@ -75,20 +64,21 @@ Text goes in here.
           closeOverlay +
           closeList; //assemble the entire image lists and store in variable
         imageList.push(image); //store the image
-        //popupwindow set up
-        popup = openPopup + captionList[i] + infoList[i] + closePopup;
-        popupList.push(popup); //store popup codes
-     
-      }
-        var clickImage = document.getElementById("dogimages");
-        clickImage.addEventListener("click",enablePopup);
+        }
+
       //Display all six images from the array in the album
       document.getElementById("dogimages").innerHTML = imageList.join(" ");
-      //Display popup Window
-      document.getElementById("popupWindow").innerHTML = popupList.join(" ");
 
-    
-      function enablePopup() {
-        document.getElementById("popupWindow").style = "display:block";
-      };
+       function enablePopup(i) {
+        document.getElementById("popupwindow").style.visibility = "visible";
+        document.getElementById("title").innerHTML=captionList[i];
+         document.getElementById("info").innerHTML=infoList[i];
+      }
+ 
+      var closeInfo = document.getElementById("closebox");
+      closeInfo.addEventListener("click",hideInfo);
+      function hideInfo() {
+          document.getElementById("popupwindow").style.visibility = "hidden";
+      }
+      
       
