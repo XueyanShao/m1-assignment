@@ -230,19 +230,27 @@ tfoot tr td:first-child {
 }
 #dogimages #dogs #dogcaptions {
   display: block;
-  color: black;
+  border:none;
+  text-align: center;
+  padding-top: 10px;
+}
+#desc {
+  color: #02a1a7;
+  font-size: 20px;
   font-weight: bold;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  text-align: center;
-  padding-top: 10px;
+  border:none;
+  padding:15px;
+  background-color: white;
+  cursor: pointer;
 }
 #dogimages #dogs #overlay {
   position: absolute;
   top: 0;
   bottom: 0;
   width: 100%;
-  height: 90%;
+  height: 85%;
   display: flex;
   align-content: center;
   text-align: center;
@@ -266,6 +274,7 @@ tfoot tr td:first-child {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
 #dogimages #dogs #overlay:hover {
   opacity: 70%;
 }
@@ -281,19 +290,7 @@ tfoot tr td:first-child {
   text-align:center;
   padding:20px;
   display:block;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s 
 }
-/*Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-} 
 #popupwindow #title {
   font-size: 30px;
   font-weight: bold;
@@ -304,6 +301,7 @@ tfoot tr td:first-child {
   margin:30px;
   background-color: turquoise;
   border-style: none;
+  cursor: pointer;
 }
 #closebox:hover {
   background-color: yellow;
@@ -313,17 +311,19 @@ tfoot tr td:first-child {
   padding: 0 6em 0 6em;
 }
 #catimages {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
 }
 #catimages #cats {
-  display: inline-block;
+ display: inline-block;
   position: relative;
   padding: 20px;
 }
 #catimages #cats img {
-  display: flex;
+display: flex;
   justify-content: center;
-  max-width: 100%;
+  width:350px;
   border-radius: 10%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
