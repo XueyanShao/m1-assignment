@@ -104,7 +104,7 @@ h3 {
   text-align: center;
 }
 p {
-  text-align:center;
+  text-align: center;
 }
 /* footer style */
 footer {
@@ -227,13 +227,13 @@ tfoot tr td:first-child {
 #dogimages #dogs img {
   display: flex;
   justify-content: center;
-  width:350px;
+  width: 350px;
   border-radius: 10%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #dogimages #dogs #dogcaptions {
   display: block;
-  border:none;
+  border: none;
   text-align: center;
   padding-top: 10px;
 }
@@ -243,8 +243,8 @@ tfoot tr td:first-child {
   font-weight: bold;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  border:none;
-  padding:15px;
+  border: none;
+  padding: 15px;
   background-color: white;
   cursor: pointer;
 }
@@ -282,32 +282,37 @@ tfoot tr td:first-child {
   opacity: 70%;
 }
 #popupwindow {
-  visibility:hidden;
-  background-color: whitesmoke;
-      height:40%;
-      width:20%;
-      position:fixed;
-      top:30%;
-      left:40%;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  text-align:center;
-  padding:20px;
-  display:block;
+  visibility: hidden;
+  background-color: #ffd038;
+  height: 40%;
+  width: 20%;
+  position: fixed;
+  top: 30%;
+  left: 40%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  padding: 20px;
+  display: block;
 }
 #popupwindow #title {
   font-size: 30px;
   font-weight: bold;
-  padding:30px;
+  padding: 30px;
+  color:white;
+}
+#info {
+  color:white;
+  font-size:16px;
 }
 #popupwindow #closebox {
-  padding:10px;
-  margin:30px;
-  background-color: turquoise;
+  padding: 10px;
+  margin: 30px;
+  font-size:15px;
+  background-color: #02a1a7;
+  color:white;
   border-style: none;
   cursor: pointer;
-}
-#closebox:hover {
-  background-color: yellow;
 }
 /* cat-gallery page */
 #catgallerypage {
@@ -319,14 +324,14 @@ tfoot tr td:first-child {
   text-align: center;
 }
 #catimages #cats {
- display: inline-block;
+  display: inline-block;
   position: relative;
   padding: 20px;
 }
 #catimages #cats img {
-display: flex;
+  display: flex;
   justify-content: center;
-  width:350px;
+  width: 350px;
   border-radius: 10%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -395,9 +400,9 @@ label {
   font-weight: bold;
 }
 #contact-container {
-  display:flex;
+  display: flex;
   flex-direction: column;
-  width:510px;
+  width: 510px;
 }
 legend {
   color: #02a1a7;
@@ -421,9 +426,9 @@ input[type="address"] {
   margin-bottom: 15px;
 }
 #selectpet {
-  width:300px;
+  width: 300px;
   height: 25px;
-  margin-bottom:15px;
+  margin-bottom: 15px;
 }
 textarea {
   display: block;
