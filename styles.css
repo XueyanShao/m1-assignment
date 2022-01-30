@@ -103,6 +103,9 @@ h2,
 h3 {
   text-align: center;
 }
+p {
+  text-align:center;
+}
 /* footer style */
 footer {
   background: no-repeat url(images/paws.jpeg);
@@ -387,9 +390,14 @@ fieldset {
 }
 label {
   display: block;
-  margin: 15px 0 0 0;
+  margin: 15px 0 5px 0;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
+}
+#contact-container {
+  display:flex;
+  flex-direction: column;
+  width:510px;
 }
 legend {
   color: #02a1a7;
@@ -402,11 +410,20 @@ fieldset {
   padding-right: 600px;
 }
 input[type="text"],
-input[type="email"],
-input[type="tel"] {
+input[type="address"] {
   width: 500px;
   height: 25px;
   margin-bottom: 15px;
+}
+#contactinfo {
+  width: 500px;
+  height: 25px;
+  margin-bottom: 15px;
+}
+#selectpet {
+  width:300px;
+  height: 25px;
+  margin-bottom:15px;
 }
 textarea {
   display: block;
