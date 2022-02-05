@@ -32,8 +32,6 @@
       var closeList = "</li>"; //variable to contain close list
       var openCaption = "<span id='dogcaptions'>";
       var closeCaption = "</span>";
-      var openOverlay = "<div id='overlay'>";
-      var closeOverlay = "</div>";
       var openText = "<div id='text'>";
       var closeText = "</div>";
       var openDesc = "<button id='desc' onclick='enablePopup(";
@@ -55,13 +53,11 @@
           openList +
           dogPhotos[i] +
           openCaption +
-          openDesc + i + openDescClose + captionList[i] + closeDesc +
+          captionList[i] + 
           closeCaption +
-          openOverlay +
           openText +
-          overlayList[i] +
+          openDesc + i + openDescClose + overlayList[i] + closeDesc +
           closeText +
-          closeOverlay +
           closeList; //assemble the entire image lists and store in variable
         imageList.push(image); //store the image
         }
@@ -80,5 +76,21 @@
       function hideInfo() {
           document.getElementById("popupwindow").style.visibility = "hidden";
       }
-      
-      
+      //jQuery to show lightbox
+$(document).ready(function(){
+      $("#dogs img").click(function() {
+        var img = $(this).clone();
+        $(this).css("cursor","pointer");
+        $("#backdrop").animate({"opacity":".50"},300,"linear").css("display","block");
+        $("#lightbox").fadeIn(); 
+        $("#lightbox").append(img);
+      }) 
+      /* Click to close lightbox */
+    $('#close, #backdrop').click(function(){
+        $('#backdrop').animate({'opacity':'0'}, 300, 'linear', function(){
+            $('#backdrop').css('display', 'none');
+        });
+        $('#lightbox').fadeOut();
+        $("#lightbox").contents().remove("img");
+    });
+  })

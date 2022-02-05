@@ -236,55 +236,44 @@ tfoot tr td:first-child {
   border: none;
   text-align: center;
   padding-top: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
 }
 #desc {
-  color: #02a1a7;
+  background-color: #02a1a7;
+  color: white;
   font-size: 20px;
-  font-weight: bold;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   border: none;
   padding: 15px;
-  background-color: white;
   cursor: pointer;
 }
-#dogimages #dogs #overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 85%;
-  display: flex;
-  align-content: center;
-  text-align: center;
-  background-color: white;
+#dogimages #dogs #text {
   opacity: 0;
-  transition: 1s ease;
-  cursor: pointer;
-}
-#dogimages #dogs #overlay #text {
   position: absolute;
-  top: 45%;
-  left: 43%;
+  top: 40%;
+  left: 50%;
   color: #ffd038;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: #02a1a7;
-  visibility: visible;
   padding: 10px;
   font-size: 20px;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-
-#dogimages #dogs #overlay:hover {
-  opacity: 70%;
+#dogimages #dogs #text:hover {
+  opacity: 100%;
+  cursor: pointer;
 }
 #popupwindow {
   visibility: hidden;
   background-color: #ffd038;
-  height: 40%;
+  height: auto;
   width: 20%;
   position: fixed;
   top: 30%;
@@ -299,20 +288,65 @@ tfoot tr td:first-child {
   font-size: 30px;
   font-weight: bold;
   padding: 30px;
-  color:white;
+  color: white;
 }
 #info {
-  color:white;
-  font-size:16px;
+  color: white;
+  font-size: 16px;
+  margin: 10px;
 }
 #popupwindow #closebox {
   padding: 10px;
   margin: 30px;
-  font-size:15px;
+  font-size: 15px;
   background-color: #02a1a7;
-  color:white;
+  color: white;
   border-style: none;
   cursor: pointer;
+  margin: 10px;
+}
+
+#backdrop {
+  z-index: 1;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+#lightbox {
+  z-index: 2;
+  position: fixed;
+  opacity: 1;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  background: #fff;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 5px #444444;
+  -webkit-box-shadow: 0px 0px 5px #444444;
+  box-shadow: 0px 0px 5px #444444;
+}
+#lightbox img {
+  width: 600px;
+  height: 600px;
+  margin: 20px;
+}
+#close {
+  font-size: 30px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: right;
+  cursor: pointer;
+  background-color: #02a1a7;
+  padding: 3px 10px 3px 10px;
 }
 /* cat-gallery page */
 #catgallerypage {
